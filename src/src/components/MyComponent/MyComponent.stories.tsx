@@ -1,10 +1,11 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import { MyComponent, MyComponentProps } from './index';
+import { MyComponent, MyComponentProps } from '../MyComponent/MyComponent';
 
 export default {
   title: 'MyComponent',
   component: MyComponent,
+  tags: ['autodocs'],
 } as Meta;
 
 const Template: StoryFn<MyComponentProps> = (args) => <MyComponent {...args} />;
