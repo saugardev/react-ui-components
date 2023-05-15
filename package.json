@@ -20,6 +20,8 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "build": "lerna run build",
+    "start": "lerna run storybook",
     "test": "lerna run test"
   }
 }
