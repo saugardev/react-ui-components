@@ -20,15 +20,20 @@ To get started with the project, follow these steps:
 
 2. Navigate to the project's root directory:
 
-  ```
-  cd raisin-ui-components
-  ```
+   ```
+   cd raisin-ui-components
+   ```
 
-3. Install dependencies:
+3. Install root dependencies:
 
-  ```
-  npm install
-  ```
+   ```
+   npm install
+   ```
+4. Install library dependencies:
+
+   ```
+   cd ./src; npm install
+   ```
 
 ## Development Workflow
 
