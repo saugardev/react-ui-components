@@ -3,7 +3,7 @@ import { StoryFn, Meta } from '@storybook/react';
 import { MyComponent, MyComponentProps } from '../MyComponent/MyComponent';
 
 export default {
-  title: 'MyComponent',
+  title: 'components/MyComponent',
   component: MyComponent,
   tags: ['autodocs'],
 } as Meta;
