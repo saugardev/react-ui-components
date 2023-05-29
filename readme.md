@@ -41,7 +41,7 @@ The repository is structured as a monorepo managed by Lerna. Here are some usefu
 
 * `npm run build`: Builds the project using Rollup.
 * `npm run start`: Starts the development server with Storybook.
-* `npm run Tailwind`: Sets up the development server to live update Tailwind classes. 
+* `npm run tailwind`: Sets up the development server to live update Tailwind classes. 
 * `npm run test`: Runs the test suite using Jest.
 * `npm run prepare`(Optional): Sets up the project with husky.
 
