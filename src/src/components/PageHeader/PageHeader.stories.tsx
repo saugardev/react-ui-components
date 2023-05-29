@@ -1,7 +1,6 @@
 import React from "react";
 import { StoryObj, Meta } from "@storybook/react";
-import { PageHeaderProps } from "./PageHeader";
-import { PageHeader } from "./PageHeader";
+import { PageHeaderProps, PageHeader } from "./PageHeader";
 
 export default {
   title: "components/PageHeader",
@@ -20,6 +19,6 @@ export const Default: StoryObj<PageHeaderProps> = {
 export const OpenMenu: StoryObj<PageHeaderProps> = {
   ...Template,
   args: {
-    open: true
-  }
+    open: true,
+  },
 };
