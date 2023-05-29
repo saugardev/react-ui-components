@@ -1,5 +1,5 @@
 import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
+import { StoryObj, Meta } from "@storybook/react";
 import { NavigationMenuBar,NavigationMenuBarProps } from "./NavigationMenuBar";
 
 export default {
@@ -8,10 +8,11 @@ export default {
   tags: ["autodocs"],
 } as Meta;
 
-const Template: StoryFn<NavigationMenuBarProps> = (args) => <NavigationMenuBar {...args} />;
+const Template: StoryObj<NavigationMenuBarProps> = {
+  render: (args: NavigationMenuBarProps) => <NavigationMenuBar {...args} />,
+};
 
-export const Default = Template.bind({});
 
-Default.args = {
-  text: "Hello, World!",
+export const Default: StoryObj<NavigationMenuBarProps> = {
+  ...Template,
 };

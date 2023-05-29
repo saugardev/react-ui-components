@@ -3,7 +3,6 @@ import React from "react";
 export interface NavigationItemProps {
   text?: string;
   link?: string;
-  menuBarStatus?: boolean;
   children?: JSX.Element | JSX.Element[] | false;
   onClick?: (e: any) => void;
   isOpen?: boolean;
