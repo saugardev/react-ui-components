@@ -1,6 +1,6 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import { MyComponent, MyComponentProps } from '../MyComponent/MyComponent';
+import { MyComponent, MyComponentProps } from './MyComponent';
 
 export default {
   title: 'components/MyComponent',

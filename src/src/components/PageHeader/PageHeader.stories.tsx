@@ -1,5 +1,5 @@
 import React from "react";
-import { StoryFn, Meta } from "@storybook/react";
+import { StoryObj, Meta } from "@storybook/react";
 import { PageHeaderProps } from "./PageHeader";
 import { PageHeader } from "./PageHeader";
 
@@ -9,10 +9,17 @@ export default {
   tags: ["autodocs"],
 } as Meta;
 
-const Template: StoryFn<PageHeaderProps> = (args) => <PageHeader {...args} />;
+const Template: StoryObj<PageHeaderProps> = {
+  render: (args: PageHeaderProps) => <PageHeader {...args} />,
+};
 
-export const Default = Template.bind({});
+export const Default: StoryObj<PageHeaderProps> = {
+  ...Template,
+};
 
-Default.args = {
-  text: "Hello, World!",
+export const OpenMenu: StoryObj<PageHeaderProps> = {
+  ...Template,
+  args: {
+    open: true
+  }
 };
