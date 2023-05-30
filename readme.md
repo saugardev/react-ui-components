@@ -41,8 +41,11 @@ The repository is structured as a monorepo managed by Lerna. Here are some usefu
 
 * `npm run build`: Builds the project using Rollup.
 * `npm run start`: Starts the development server with Storybook.
+* `npm run tailwind`: Sets up the development server to live update Tailwind classes. 
 * `npm run test`: Runs the test suite using Jest.
 * `npm run prepare`(Optional): Sets up the project with husky.
+
+To automatically update CSS using tailwind and view your changes live in Storybook, you must run `npm run tailwind` in one terminal, and `npm run start` in a separate terminal. Note that you must first run `cd src` in each terminal window.
 
 ## Contributing
 Contributions to Raisin UI Components are welcome! If you find any bugs, have feature requests, or want to contribute enhancements, please follow these steps:
